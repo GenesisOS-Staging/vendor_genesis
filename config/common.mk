@@ -201,6 +201,9 @@ CUSTOM_LOCALES += \
 # Bootanimation
 $(call inherit-product, vendor/genesis/config/bootanimation.mk)
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 # Fonts
 include vendor/genesis/config/fonts.mk
 
